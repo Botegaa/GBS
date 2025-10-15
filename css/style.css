@@ -15,6 +15,22 @@
 header {
   width: 1200px;
   justify-self: center;
+  display: flex;
+}
+
+header ul{
+  display: flex;
+ 
+}
+
+header li{
+  display: flex;
+  text-decoration: none;
+   padding-left: 48px;
+}
+header a{
+  display: flex;
+  text-decoration: none;
 }
 
 header {
@@ -57,54 +73,78 @@ header {
   }
 }
 
+#areas {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  gap: 6rem;
+
+  h2 {
+    text-align: center;
+  }
+}
+
 /* ===== CARROSSEL ===== */
 .carousel {
   position: relative;
-  overflow: hidden;
+  align-items: center;
+  display: flex;
+  gap: 1.5rem;
 }
 
 .carousel-track {
   display: flex;
-  transition: transform 0.4s ease-in-out;
+  scroll-behavior: smooth;
+  overflow: hidden;
+  gap: 3rem;
 }
 
 /* ===== CARD ===== */
 .area-card {
-  flex: 0 0 350px;
-  padding: 25px 20px;
-  margin: 0 15px;
-  text-align: left;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  gap: 1.5rem;
+  width: 20rem;
 }
 
 .area-card h3 {
-  background-color: #ead9c3;
-  padding: 12px;
-  border-radius: 10px;
-  font-size: 18px;
-  font-weight: 600;
-  color: #3a2f1f;
-  margin-bottom: 15px;
-  text-align: left;
+  background-color: var(--gbs-color-secondary);
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
 }
 
 .area-card ul {
   list-style-type: disc;
-  padding-left: 25px;
+  padding-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
-.area-card li {
-  margin-bottom: 8px;
-  font-size: 14px;
-  color: #1a1a1a;
+/* ===== BOTÕES DO CARROSSEL ===== */
+
+.prev,
+.next {
+  padding: 0.5rem;
+  
+  color: var(--gbs-color-neutral-50);
+  border-radius: 50%;
+  border: solid 1px var(--gbs-color-neutral-30);
+  background-color: var(--gbs-color-neutral-00);
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--gbs-color-neutral-10);
+  }
 }
-
-
 
 /* ===== BOLINHAS ===== */
 .carousel-dots {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: -4rem;
   gap: 10px;
 }
 
@@ -126,7 +166,8 @@ header {
     flex: 0 0 80%;
   }
 
-  .prev, .next {
+  .prev,
+  .next {
     display: none;
   }
 }
@@ -304,12 +345,109 @@ header {
   width: 100vw; 
   height: 74px;
   color: white;
-   position: relative;
-  left: 50%;
-  margin-left: -50vw;
+  position: relative;
+
   
   display: flex;
   align-items: center;  
   justify-content: center;
   text-align: center;
 }
+
+
+.contato-container{
+  display: flex;
+  gap: 96px;
+}
+
+#contato{
+  display: flex;
+  gap: 96px;
+  padding: 96px 64px;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact-content{
+  display: flex;
+  gap: 48px;
+  flex-direction: column;
+}
+
+.tablist{
+  display: flex;
+  gap: 16px;
+  padding-bottom: 32px;
+}
+
+.loc{
+  display: flex;
+  padding-bottom: 16px;
+}
+
+.phone{
+  display: flex;
+}
+
+.iframe-map{
+  border-radius: 32px;
+  border: solid 1px var(--gbs-color-neutral-30);
+}
+
+.footer{
+
+  background-color: var(--gbs-color-primary);
+  
+}
+
+.footer-content img {
+  padding: 48px;
+}
+.footer-columns{
+  padding: 64px 0;
+  display: flex;
+  gap: 96px;
+  
+ 
+}
+.footer-columns h3, a{
+  color: var(--gbs-color-neutral-10);
+}
+
+.footer-columns a{
+  text-decoration: none;
+  &:hover{
+    color: var(--gbs-color-neutral-30);
+  }
+}
+.footer-column ul{
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-column{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+
+.footer-content{
+  width: 1200px;
+  justify-self: center;
+  padding-left: 64px;
+  padding-right: 64px;
+  padding-top: 64px;
+  gap: 32px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 32px;
+}
+
+
+.footer-content p{
+  color: var(--gbs-color-neutral-10);
+  font-size: 14px;
+}
+

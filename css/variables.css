@@ -87,17 +87,25 @@ span.highlight {
   padding: 0 0.5rem;
 }
 
-.icon-m {
+
+.icon-xs {
   width: 2rem;
   height: 2rem;
   vertical-align: middle;
 }
 
-.icon-xl {
+.icon-x {
+  width: 2rem;
+  height: 2rem;
+  vertical-align: middle;
+}
+
+.icon-xxl {
   width: 5rem;
   height: 5rem;
   vertical-align: middle;
 }
+
 
 section {
   width: 1200px;

@@ -5,62 +5,85 @@ function mudarTabClinica(idClinica) {
   const unimedPanel = document.getElementById("panel-a");
   const providaPanel = document.getElementById("panel-b");
 
+  const unimedMap = document.getElementById("mapasUnimed")
+  const providaMap = document.getElementById("mapasProvida")
+
   if (idClinica === "unimed") {
     unimedBtn.setAttribute("aria-selected", "true");
     providaBtn.setAttribute("aria-selected", "false");
 
     unimedPanel.removeAttribute("hidden");
     providaPanel.setAttribute("hidden", "true");
+
+    unimedMap.removeAttribute("hidden");
+    providaMap.setAttribute("hidden", "true");
   } else if (idClinica === "provida") {
     providaBtn.setAttribute("aria-selected", "true");
     unimedBtn.setAttribute("aria-selected", "false");
 
     providaPanel.removeAttribute("hidden");
     unimedPanel.setAttribute("hidden", "true");
+
+    providaMap.removeAttribute("hidden");
+    unimedMap.setAttribute("hidden", "true");
+
   }
 }
 
-  const track = document.querySelector('.carousel-track');
-  const cards = Array.from(track.children);
-  const prevBtn = document.querySelector('.prev');
-  const nextBtn = document.querySelector('.next');
-  const dotsNav = document.querySelector('.carousel-dots');
+ const track = document.querySelector(".carousel-track");
+const prevBtn = document.querySelector(".prev");
+const nextBtn = document.querySelector(".next");
 
-  const visibleSlides = 2; // quantos cards aparecem por vez
-  const totalDots = 3; // só 3 bolinhas
-  let currentIndex = 0;
+const card = document.querySelector(".area-card");
+const cardWidth = card.offsetWidth;
+const gap = parseFloat(getComputedStyle(track).gap);
+const step = track.clientWidth / 2;
 
-  // criar bolinhas (3)
-  for (let i = 0; i < totalDots; i++) {
-    const dot = document.createElement('button');
-    if (i === 0) dot.classList.add('active');
-    dotsNav.appendChild(dot);
-  }
+const paginationContainer = document.querySelector(".carousel-dots");
+const totalSteps = Math.ceil(track.scrollWidth / step);
+let currentStep = 0;
 
-  const dots = Array.from(dotsNav.children);
+let scrollPosition = 0;
 
-  function updateCarousel() {
-    const cardWidth = cards[0].getBoundingClientRect().width + 30;
-    track.style.transform = `translateX(-${currentIndex * cardWidth * visibleSlides}px)`;
+nextBtn.addEventListener("click", () => {
+  const maxScroll = track.scrollWidth - track.clientWidth;
+  const nextPosition = scrollPosition + step;
 
-    dots.forEach(dot => dot.classList.remove('active'));
-    dots[currentIndex].classList.add('active');
-  }
+  scrollPosition = nextPosition >= maxScroll ? maxScroll : nextPosition;
+  track.scrollTo({ left: scrollPosition, behavior: "smooth" });
 
-  nextBtn.addEventListener('click', () => {
-    currentIndex = (currentIndex + 1) % totalDots;
-    updateCarousel();
+  currentStep = Math.round(scrollPosition / step);
+  updatePagination(currentStep);
+});
+
+prevBtn.addEventListener("click", () => {
+  const prevPosition = scrollPosition - step;
+
+  scrollPosition = prevPosition <= 0 ? 0 : prevPosition;
+  track.scrollTo({ left: scrollPosition, behavior: "smooth" });
+  currentStep = Math.round(scrollPosition / step);
+  updatePagination(currentStep);
+});
+
+for (let i = 1; i < totalSteps; i++) {
+  const dot = document.createElement("button");
+  if (i === 1) dot.classList.add("active");
+  paginationContainer.appendChild(dot);
+
+  dot.addEventListener("click", () => {
+    scrollPosition = (i - 1) * step;
+    track.scrollTo({ left: scrollPosition, behavior: "smooth" });
+
+    updatePagination(i - 1);
   });
+}
 
-  prevBtn.addEventListener('click', () => {
-    currentIndex = (currentIndex - 1 + totalDots) % totalDots;
-    updateCarousel();
+function updatePagination(current) {
+  document.querySelectorAll(".carousel-dots button").forEach((dot, index) => {
+    if (index === current) {
+      dot.classList.add("active");
+    } else {
+      dot.classList.remove("active");
+    }
   });
-
-  dots.forEach((dot, i) => {
-    dot.addEventListener('click', () => {
-      currentIndex = i;
-      updateCarousel();
-    });
-  });
-
+}
