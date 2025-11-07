@@ -546,12 +546,20 @@ header {
 
             &:last-of-type {
               width: 70%;
+
+              @media (max-width: 400px) {
+                width: 100%;
+              }
             }
           }
         }
 
         .cutout {
           height: 34rem;
+
+          @media (max-width: 400px) {
+            display: none;
+          }
         }
       }
     }
