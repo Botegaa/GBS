@@ -6,7 +6,9 @@
     <title>Dr. Gustavo Botega de Souza</title>
     <link rel="stylesheet" href="css/variables.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/tablet.css" />
     <script src="js/clinicasTabs.js" defer></script>
+    <script src="js/deviceMockupCarousel.js" defer></script>
   </head>
   <body>
     <header>
@@ -26,93 +28,113 @@
       </nav>
     </header>
     <section id="hero">
+      <div class="albatross"></div>
       <div class="hero-content">
         <h2 class="title-hero">
-          <span> Saúde do intestino, reto e ânus com a </span>
-          <span class="highlight">segurança</span>
-          <br />
-          <span class="highlight">que você precisa.</span>
+          Saúde do intestino, reto e ânus com a
+          <span class="highlight">segurança que você precisa.</span>
         </h2>
         <p class="subtitle">
           Expertise em doenças do intestino, reto e ânus, focada em técnicas
           minimamente invasivas e na sua qualidade de vida. Comece aqui sua
           jornada para o bem-estar.
         </p>
-        <a href="#contact" class="btn-primary">Agende sua consulta</a>
+        <a href="#contato" class="btn-primary">Agende sua consulta</a>
       </div>
     </section>
-<section id="areas">
-  <h2 class="title-page-small">
-    <span>Saúde digestiva e orificial: da investigação de</span>
-    <br />
-    <span>sintomas à</span>
-    <span class="highlight">cirurgia avançada</span>
-  </h2>
 
-<div class="carousel">
-    <button class="prev">
-      <svg class="icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M15.41 7.41L14 6l-6 6l6 6l1.41-1.41L10.83 12z"/></svg>
-    </button>
+    <section id="areas">
+      <h2 class="title-page">
+        <span>Saúde digestiva e orificial: da investigação de</span>
+        <span>sintomas à</span>
+        <span class="highlight">cirurgia avançada</span>
+      </h2>
 
-    <div class="carousel-track">
-      <article class="area-card">
-        <h3 class="heading">Gastroenterologia, clínica geral e diagnóstico</h3>
-        <ul class="body-small">
-          <li>Investigação de Dores Abdominais</li>
-          <li>Intolerâncias Alimentares</li>
-          <li>Diarréias Agudas e Crônicas</li>
-          <li>Constipação Intestinal</li>
-          <li>Hemorragias Digestivas</li>
-          <li>Endometriose Intestinal</li>
-        </ul>
-      </article>
+      <div class="carousel">
+        <button class="prev">
+          <svg
+            class="icon-xs"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="M15.41 7.41L14 6l-6 6l6 6l1.41-1.41L10.83 12z"
+            />
+          </svg>
+        </button>
 
-      <article class="area-card">
-        <h3 class="heading">Doenças inflamatórias e infecciosas</h3>
-        <ul class="body-small">
-          <li>Doenças Inflamatórias Intestinais (DII)</li>
-          <li>Tratamento de Colites</li>
-          <li>Proctites</li>
-          <li>Doenças Sexualmente Transmissíveis (DSTs)</li>
-        </ul>
-      </article>
+        <div class="carousel-track">
+          <article class="area-card">
+            <h3 class="heading">
+              Gastroenterologia, clínica geral e diagnóstico
+            </h3>
+            <ul class="body-small">
+              <li>Investigação de Dores Abdominais</li>
+              <li>Intolerâncias Alimentares</li>
+              <li>Diarréias Agudas e Crônicas</li>
+              <li>Constipação Intestinal</li>
+              <li>Hemorragias Digestivas</li>
+              <li>Endometriose Intestinal</li>
+            </ul>
+          </article>
 
-      <article class="area-card">
-        <h3 class="heading">Tratamento cirúrgico oncológico</h3>
-        <ul class="body-small">
-          <li>Câncer de Cólon e Reto</li>
-          <li>Pólipos Intestinais</li>
-          <li>Doença Diverticular</li>
-          <li>Obstruções Intestinais</li>
-        </ul>
-      </article>
+          <article class="area-card">
+            <h3 class="heading">Doenças inflamatórias e infecciosas</h3>
+            <ul class="body-small">
+              <li>Doenças Inflamatórias Intestinais (DII)</li>
+              <li>Tratamento de Colites</li>
+              <li>Proctites</li>
+              <li>Doenças Sexualmente Transmissíveis (DSTs)</li>
+            </ul>
+          </article>
 
-      <article class="area-card">
-        <h3 class="heading">Doenças orificiais e funcionais</h3>
-        <ul class="body-small">
-          <li>Doenças orificiais</li>
-          <li>Laser para Doenças Orificiais</li>
-          <li>Incontinência Fecal</li>
-          <li>Cisto Pilonidal e Hidroadenite</li>
-        </ul>
-      </article>
+          <article class="area-card">
+            <h3 class="heading">Tratamento cirúrgico oncológico</h3>
+            <ul class="body-small">
+              <li>Câncer de Cólon e Reto</li>
+              <li>Pólipos Intestinais</li>
+              <li>Doença Diverticular</li>
+              <li>Obstruções Intestinais</li>
+            </ul>
+          </article>
 
-      <article class="area-card">
-        <h3 class="heading">Procedimentos endoscópicos</h3>
-        <ul class="body-small">
-          <li>Colonoscopia Diagnóstica</li>
-          <li>Colonoscopia Terapêutica (Remoção de Pólipos)</li>
-        </ul>
-      </article>
-    </div>
+          <article class="area-card">
+            <h3 class="heading">Doenças orificiais e funcionais</h3>
+            <ul class="body-small">
+              <li>Doenças hemorroidárias</li>
+              <li>Abcessos, fístulas, e fissuras anais</li>
+              <li>Laser para Doenças Orificiais</li>
+              <li>Incontinência Fecal</li>
+              <li>Cisto Pilonidal e Hidroadenite</li>
+            </ul>
+          </article>
 
-    <button class="next">
-      <svg class="icon-xs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M10 6L8.59 7.41L13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
-    </button>
-  </div>
+          <article class="area-card">
+            <h3 class="heading">Procedimentos endoscópicos</h3>
+            <ul class="body-small">
+              <li>Colonoscopia Diagnóstica</li>
+              <li>Colonoscopia Terapêutica (Remoção de Pólipos)</li>
+            </ul>
+          </article>
+        </div>
 
-  <div class="carousel-dots"></div>
-</section>
+        <button class="next">
+          <svg
+            class="icon-xs"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="M10 6L8.59 7.41L13.17 12l-4.58 4.59L10 18l6-6z"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <div class="carousel-dots"></div>
+    </section>
 
     <section id="sobre">
       <div class="card-sobre">
@@ -131,52 +153,55 @@
           <button class="btn-primary">Saber mais</button>
         </div>
         <div class="right-panel">
-          <div class="sobre-detalhe">
-            <svg
-              class="icon-x"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-            >
-              <path
-                fill="currentColor"
-                d="M5 13.18v4L12 21l7-3.82v-4L12 17zM12 3L1 9l11 6l9-4.91V17h2V9z"
-              />
-            </svg>
-            <p class="body-small single-line">
-              Graduação em Medicina pela Universidade do Sul de Santa Catarina
-            </p>
-          </div>
-          <div class="sobre-detalhe">
-            <svg
-              class="icon-x"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-            >
-              <path
-                fill="currentColor"
-                d="M5 13.18v4L12 21l7-3.82v-4L12 17zM12 3L1 9l11 6l9-4.91V17h2V9z"
-              />
-            </svg>
-            <p class="body-small">
-              Residência Médica em Cirurgia Geral e Coloproctologia pelo
-              Hospital das Clínicas da Faculdade de Medicina de Ribeirão Preto
-            </p>
-          </div>
-          <div class="sobre-detalhe">
-            <svg
-              class="icon-x"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-            >
-              <path
-                fill="currentColor"
-                d="M5 13.18v4L12 21l7-3.82v-4L12 17zM12 3L1 9l11 6l9-4.91V17h2V9z"
-              />
-            </svg>
-            <p class="body-small single-line">
-              Fellowship em Vídeocirurgia Colorretal no Hospital do Câncer de
-              Barretos
-            </p>
+          <div class="detalhes">
+            <div class="sobre-detalhe">
+              <svg
+                class="icon-s"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M5 13.18v4L12 21l7-3.82v-4L12 17zM12 3L1 9l11 6l9-4.91V17h2V9z"
+                />
+              </svg>
+              <p class="body-small single-line">
+                Graduação em Medicina pela Universidade do Sul de Santa Catarina
+              </p>
+            </div>
+            <div class="sobre-detalhe">
+              <svg
+                class="icon-s"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M5 13.18v4L12 21l7-3.82v-4L12 17zM12 3L1 9l11 6l9-4.91V17h2V9z"
+                />
+              </svg>
+              <p class="body-small">
+                Residência Médica em Cirurgia Geral e Coloproctologia pelo
+                Hospital das Clínicas da Faculdade de Medicina de Ribeirão Preto
+                — USP
+              </p>
+            </div>
+            <div class="sobre-detalhe">
+              <svg
+                class="icon-s"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M5 13.18v4L12 21l7-3.82v-4L12 17zM12 3L1 9l11 6l9-4.91V17h2V9z"
+                />
+              </svg>
+              <p class="body-small single-line">
+                Fellowship em Vídeocirurgia Colorretal no Hospital do Câncer de
+                Barretos (Atual Hospital de Amor)
+              </p>
+            </div>
           </div>
           <img class="cutout" src="imgs/GBS_Cutout.png" alt="" />
         </div>
@@ -184,186 +209,293 @@
       </div>
     </section>
 
+    <section id="tecnology">
+      <h2 class="title-page">
+        <span>Tecnologia e humanização</span>
+        <span class="highlight">ao seu dispor</span>
+      </h2>
 
-   <section class="tecnology">
-  <h2 class="title-hero">
-    <span>Tecnologia e humanização</span>
-    <br />
-    <span class="highlight">ao seu dispor</span>
-  </h2>
+      <div class="tecnology-container">
+        <div class="tecnology-infos">
+          <svg
+            class="icon-xxl"
+            viewBox="0 0 68 60"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M48.9333 24.7C47.6333 26 45.4667 26 44.1667 24.7L29.2667 9.83335L5.76667 33.3L3.56667 31.2C1.694 29.325 0.642136 26.7834 0.642136 24.1334C0.642136 21.4833 1.694 18.9417 3.56667 17.0667L17.7 2.93335C19.575 1.06067 22.1167 0.00881231 24.7667 0.00881231C27.4167 0.00881231 29.9583 1.06067 31.8333 2.93335L48.9333 20C50.2333 21.3 50.2333 23.4 48.9333 24.7ZM51.2667 17.6334C53.8667 20.2334 53.8667 24.4667 51.2667 27.0667C47.0333 31.3 42.5667 27.8 41.8333 27.0667L29.3 14.5334L10.7333 33.1C10.4243 33.4084 10.1792 33.7747 10.0119 34.1779C9.84462 34.5812 9.75852 35.0135 9.75852 35.45C9.75852 35.8866 9.84462 36.3189 10.0119 36.7221C10.1792 37.1254 10.4243 37.4916 10.7333 37.8C12.0333 39.1 14.1333 39.1 15.4667 37.8L30.8667 22.4L33.2333 24.7667L17.8333 40.1667C17.5243 40.4751 17.2792 40.8414 17.1119 41.2446C16.9446 41.6479 16.8585 42.0801 16.8585 42.5167C16.8585 42.9533 16.9446 43.3855 17.1119 43.7888C17.2792 44.192 17.5243 44.5583 17.8333 44.8667C19.1333 46.1667 21.2333 46.1667 22.5667 44.8667L37.9667 29.4667L40.3333 31.8334L24.9333 47.2334C24.6247 47.542 24.3799 47.9083 24.2129 48.3116C24.0459 48.7148 23.9599 49.1469 23.9599 49.5834C23.9599 50.0198 24.0459 50.452 24.2129 50.8552C24.3799 51.2584 24.6247 51.6248 24.9333 51.9334C25.2419 52.242 25.6083 52.4868 26.0115 52.6538C26.4147 52.8208 26.8469 52.9068 27.2833 52.9068C27.7198 52.9068 28.1519 52.8208 28.5551 52.6538C28.9584 52.4868 29.3247 52.242 29.6333 51.9334L45.0333 36.5334L47.4 38.9L32 54.3C31.6914 54.6086 31.4466 54.975 31.2796 55.3782C31.1126 55.7814 31.0266 56.2136 31.0266 56.65C31.0266 57.0865 31.1126 57.5186 31.2796 57.9218C31.4466 58.3251 31.6914 58.6914 32 59C32.6233 59.6233 33.4686 59.9734 34.35 59.9734C34.7864 59.9734 35.2186 59.8875 35.6218 59.7205C36.025 59.5534 36.3914 59.3086 36.7 59L64.4333 31.2C66.306 29.325 67.3579 26.7834 67.3579 24.1334C67.3579 21.4833 66.306 18.9417 64.4333 17.0667L50.3 2.93335C48.4599 1.094 45.9754 0.0442326 43.3739 0.00689065C40.7724 -0.0304513 38.2588 0.947576 36.3667 2.73335L51.2667 17.6334Z"
+            />
+          </svg>
 
-  <div class="tecnology-container">
-    <div class="tecnology-infos">
-      <img src="imgs/HandsIcon.svg" alt="Ícone de mãos">
-      <h3 class="title-page-small">Atendimento Humanizado</h3>
-      <p class="body">
-        Foco na escuta ativa e empatia para um tratamento que respeita 
-        a sua individualidade e necessidades.
-      </p>
-    </div>
+          <h3 class="heading">Atendimento Humanizado</h3>
+          <p class="body">
+            Foco na escuta ativa e empatia para um tratamento que respeita a sua
+            <span class="strong">individualidade e necessidades</span>.
+          </p>
+        </div>
 
-    <div class="tecnology-infos">
-      <img src="imgs/MedIcon.svg" alt="Ícone de mãos">
-      <h3 class="title-page-small">Recuperação Rápida</h3>
-      <p class="body">
-        Utilização de técnicas minimamente invasivas por videocirurgia, garantindo um pós-operatório mais seguro e confortável.
-      </p>
-    </div>
+        <div class="tecnology-infos">
+          <svg
+            class="icon-xxl"
+            viewBox="0 0 68 68"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M53.1 34.0666L66.3667 20.7999C66.6757 20.4916 66.9209 20.1253 67.0881 19.722C67.2554 19.3188 67.3415 18.8865 67.3415 18.4499C67.3415 18.0134 67.2554 17.5811 67.0881 17.1778C66.9209 16.7746 66.6757 16.4083 66.3667 16.0999L51.9 1.63326C51.5916 1.32425 51.2253 1.07909 50.8221 0.911819C50.4189 0.744547 49.9866 0.658447 49.55 0.658447C49.1135 0.658447 48.6812 0.744547 48.2779 0.911819C47.8747 1.07909 47.5084 1.32425 47.2 1.63326L33.9334 14.8999L20.6667 1.63326C20.0421 1.01242 19.1973 0.663952 18.3167 0.663952C17.4361 0.663952 16.5912 1.01242 15.9667 1.63326L1.50002 16.0999C1.19101 16.4083 0.94585 16.7746 0.778579 17.1778C0.611307 17.5811 0.525208 18.0134 0.525208 18.4499C0.525208 18.8865 0.611307 19.3188 0.778579 19.722C0.94585 20.1253 1.19101 20.4916 1.50002 20.7999L14.7667 34.0666L1.50002 47.3333C1.19101 47.6416 0.94585 48.0079 0.778579 48.4112C0.611307 48.8144 0.525208 49.2467 0.525208 49.6833C0.525208 50.1198 0.611307 50.5521 0.778579 50.9553C0.94585 51.3586 1.19101 51.7249 1.50002 52.0333L15.9667 66.4999C17.2667 67.7999 19.3667 67.7999 20.6667 66.4999L33.9334 53.2333L47.2 66.4999C47.8667 67.1666 48.7 67.4666 49.5667 67.4666C50.4334 67.4666 51.2667 67.1333 51.9333 66.4999L66.4 52.0333C66.709 51.7249 66.9542 51.3586 67.1215 50.9553C67.2887 50.5521 67.3748 50.1198 67.3748 49.6833C67.3748 49.2467 67.2887 48.8144 67.1215 48.4112C66.9542 48.0079 66.709 47.6416 66.4 47.3333L53.1 34.0666ZM34 23.9999C35.8334 23.9999 37.3334 25.4999 37.3334 27.3333C37.3334 29.1666 35.8334 30.6666 34 30.6666C32.1667 30.6666 30.6667 29.1666 30.6667 27.3333C30.6667 25.4999 32.1667 23.9999 34 23.9999ZM18.3 30.5333L6.20002 18.4666L18.3 6.36659L30.3667 18.4333L18.3 30.5333ZM27.3334 37.3333C25.5 37.3333 24 35.8333 24 33.9999C24 32.1666 25.5 30.6666 27.3334 30.6666C29.1667 30.6666 30.6667 32.1666 30.6667 33.9999C30.6667 35.8333 29.1667 37.3333 27.3334 37.3333ZM34 43.9999C32.1667 43.9999 30.6667 42.4999 30.6667 40.6666C30.6667 38.8333 32.1667 37.3333 34 37.3333C35.8334 37.3333 37.3334 38.8333 37.3334 40.6666C37.3334 42.4999 35.8334 43.9999 34 43.9999ZM40.6667 30.6666C42.5 30.6666 44 32.1666 44 33.9999C44 35.8333 42.5 37.3333 40.6667 37.3333C38.8334 37.3333 37.3334 35.8333 37.3334 33.9999C37.3334 32.1666 38.8334 30.6666 40.6667 30.6666ZM49.5334 61.7999L37.4334 49.7333L49.5334 37.6333L61.6 49.6999L49.5334 61.7999Z"
+            />
+          </svg>
+          <h3 class="heading">Recuperação Rápida</h3>
+          <p class="body">
+            Utilização de técnicas
+            <span class="strong">minimamente invasivas</span> por videocirurgia,
+            garantindo um pós-operatório mais seguro e confortável.
+          </p>
+        </div>
 
-    <div class="tecnology-infos">
-      <img src="imgs/StarsIcon.svg" alt="Ícone de mãos">
-      <h3 class="title-page-small">Busca por Excelência</h3>
-      <p class="body">
-        Compromisso constante com a atualização profissional e a busca pelas soluções mais eficazes e modernas da Coloproctologia.
-      </p>
-    </div>
-  </div>
-</section>
+        <div class="tecnology-infos">
+          <svg
+            class="icon-xxl"
+            viewBox="0 0 74 74"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M60.3333 26.9999L64.5 17.8333L73.6666 13.6666L64.5 9.49992L60.3333 0.333252L56.1666 9.49992L47 13.6666L56.1666 17.8333L60.3333 26.9999ZM35.3333 28.6666L27 10.3333L18.6666 28.6666L0.333313 36.9999L18.6666 45.3333L27 63.6666L35.3333 45.3333L53.6666 36.9999L35.3333 28.6666ZM60.3333 46.9999L56.1666 56.1666L47 60.3333L56.1666 64.4999L60.3333 73.6666L64.5 64.4999L73.6666 60.3333L64.5 56.1666L60.3333 46.9999Z"
+            />
+          </svg>
+          <h3 class="heading">Busca por Excelência</h3>
+          <p class="body">
+            Compromisso constante com a atualização profissional e a busca pelas
+            soluções <span class="strong">mais eficazes e modernas</span> da
+            Coloproctologia.
+          </p>
+        </div>
+      </div>
+    </section>
 
+    <section id="instagram">
+      <div class="insta-content">
+        <h2 class="title-page-small">
+          Sem dúvidas e sem tabus:
+          <span class="highlight">conteúdo de saúde de verdade</span>
+        </h2>
+        <p class="subtitle">
+          Me acompanhe no Instagram para dicas rápidas, informações essenciais e
+          respostas sobre sintomas. Desmistifique sua saúde intestinal de forma
+          leve e clara.
+        </p>
+        <a href="https://www.instagram.com/dr.gustavobotega?igsh=MXVxdnZ4MmY4enlp" class="btn-primary">SEGUIR NO INSTAGRAM</a>
+      </div>
+      <div class="device-mockup">
+        <button class="prev-video">
+          <svg class="icon-xl" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              fill="currentColor"
+              d="m14 18l-6-6l6-6l1.4 1.4l-4.6 4.6l4.6 4.6z"
+            />
+          </svg>
+        </button>
+        <div class="mockup-device">
+          <div class="mockup-track">
+            <video src="imgs/DOC.MOV"></video>
+            <video src="imgs/DOC2.MOV"></video>
+          </div>
+        </div>
+        <img class="phone-mockup" src="imgs/GBS_Phone-Mockup.png" alt="" />
+        <button class="play-pause">
+          <svg
+            class="icon-xl play"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10s10-4.48 10-10S17.52 2 12 2M9.5 16.5v-9l7 4.5z"
+            />
+          </svg>
+
+          <svg
+            class="icon-xl pause hidden"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10s10-4.48 10-10S17.52 2 12 2m-1 14H9V8h2zm4 0h-2V8h2z"
+            />
+          </svg>
+        </button>
+        <button class="next-video">
+          <svg class="icon-xl" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              fill="currentColor"
+              d="M12.6 12L8 7.4L9.4 6l6 6l-6 6L8 16.6z"
+            />
+          </svg>
+        </button>
+      </div>
+    </section>
 
     <section id="contato">
       <h2 class="title-page-small">Onde agendar sua consulta</h2>
       <div class="contato-container">
         <div id="contact-content">
-
-        <p class="body">
-          Para a sua comodidade, atendo em clínicas e hospitais de referência em
-          Tubarão (SC), garantindo que você tenha acesso a um cuidado de
-          excelência.
-        </p>
-        <hr />
-        <div class="tabs-clinicas">
-          <div class="tablist" aria-label="Locais de Atendimento">
-            <button
-              id="tab-a"
-              role="tab"
-              aria-controls="panel-a"
-              aria-selected="true"
-              class="btn-option"
-              onClick="mudarTabClinica('unimed')"
-            >
-              Unimed
-            </button>
-            <button
-              id="tab-b"
-              role="tab"
-              aria-controls="panel-b"
-              aria-selected="false"
-              class="btn-option"
-              onClick="mudarTabClinica('provida')"
-            >
-              Pró-Vida
-            </button>
-          </div>
-          <div id="panel-a" role="tabpanel" aria-labelledby="tab-a">
-            <div class="loc">
-              <svg
-                class="icon-x"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
+          <p class="body">
+            Para a sua comodidade, atendo em clínicas e hospitais de referência
+            em Tubarão (SC), garantindo que você tenha acesso a um cuidado de
+            excelência.
+          </p>
+          <hr />
+          <div class="tabs-clinicas">
+            <div class="tablist" aria-label="Locais de Atendimento">
+              <button
+                id="tab-a"
+                role="tab"
+                aria-controls="panel-a"
+                aria-selected="true"
+                class="btn-option"
+                onClick="mudarTabClinica('unimed')"
               >
-                <path
-                  fill="currentColor"
-                  d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7m0 9.5a2.5 2.5 0 0 1 0-5a2.5 2.5 0 0 1 0 5"
-                />
-              </svg>
-              <div class="endereco">
-                <p class="body-large">Rua da Unimed, 0000</p>
-                <p class="body-large">Bairro da Unimed — Tubarão, SC</p>
+                Unimed
+              </button>
+              <button
+                id="tab-b"
+                role="tab"
+                aria-controls="panel-b"
+                aria-selected="false"
+                class="btn-option"
+                onClick="mudarTabClinica('provida')"
+              >
+                Pró-Vida
+              </button>
+            </div>
+            <div id="panel-a" role="tabpanel" aria-labelledby="tab-a">
+              <div class="loc">
+                <svg
+                  class="icon-s"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7m0 9.5a2.5 2.5 0 0 1 0-5a2.5 2.5 0 0 1 0 5"
+                  />
+                </svg>
+                <div class="endereco">
+                  <p class="body-large">R. Aldomar Cardoso, 198</p>
+                  <p class="body-large">Passagem — Tubarão, SC</p>
+                </div>
+              </div>
+              <div class="phone">
+                <svg
+                  class="icon-s"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24c1.12.37 2.33.57 3.57.57c.55 0 1 .45 1 1V20c0 .55-.45 1-1 1c-9.39 0-17-7.61-17-17c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02z"
+                  />
+                </svg>
+                <p class="body-large">(48) 3621-2500</p>
               </div>
             </div>
-            <div class="phone">
-              <svg
-                class="icon-x"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  fill="currentColor"
-                  d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24c1.12.37 2.33.57 3.57.57c.55 0 1 .45 1 1V20c0 .55-.45 1-1 1c-9.39 0-17-7.61-17-17c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02z"
-                />
-              </svg>
-              <p class="body-large">(48) 98765-4321</p>
-            </div>
-          </div>
-          <div id="panel-b" role="tabpanel" aria-labelledby="tab-b" hidden>
-            <div class="loc">
-              <svg
-                class="icon-x"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  fill="currentColor"
-                  d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7m0 9.5a2.5 2.5 0 0 1 0-5a2.5 2.5 0 0 1 0 5"
-                />
-              </svg>
-              <div class="endereco">
-                <p class="body-large">Rua da Pró-Vida, 0000</p>
-                <p class="body-large">Bairro da Pró-Vida — Tubarão, SC</p>
+            <div id="panel-b" role="tabpanel" aria-labelledby="tab-b" hidden>
+              <div class="loc">
+                <svg
+                  class="icon-s"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7m0 9.5a2.5 2.5 0 0 1 0-5a2.5 2.5 0 0 1 0 5"
+                  />
+                </svg>
+                <div class="endereco">
+                  <p class="body-large">
+                    Avenida Marcolino Martins Cabral, 2075
+                  </p>
+                  <p class="body-large">Vila Moema — Tubarão, SC</p>
+                </div>
               </div>
-            </div>
-            <div class="phone">
-              <svg
-                class="icon-x"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  fill="currentColor"
-                  d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24c1.12.37 2.33.57 3.57.57c.55 0 1 .45 1 1V20c0 .55-.45 1-1 1c-9.39 0-17-7.61-17-17c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02z"
-                />
-              </svg>
-              <p class="body-large">(48) 12345-6789</p>
+              <div class="phone">
+                <svg
+                  class="icon-s"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24c1.12.37 2.33.57 3.57.57c.55 0 1 .45 1 1V20c0 .55-.45 1-1 1c-9.39 0-17-7.61-17-17c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02z"
+                  />
+                </svg>
+                <p class="body-large">(48) 3631-1500</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div id="mapasUnimed"><iframe class="iframe-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9919.826526887045!2d-48.99440511109954!3d-28.473875271597066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x952143d845e56991%3A0xbb67d24034904864!2sHospital%20Unimed%20Tubar%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1760470310544!5m2!1spt-BR!2sbr" width="526" height="338" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe></div>
-      <div id="mapasProvida" hidden>
-  <iframe
-    class="iframe-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3550.3647872670544!2d-49.00581492450586!3d-28.476566982481174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f17!3m3!1m2!1s0x952143032bec18c1%3A0xdae99ca96c2ed00d!2sComplexo%20M%C3%A9dico%20Provida!5e0!3m2!1spt-BR!2sbr!4v1760549999999!5m2!1spt-BR!2sbr"width="526"height="338"style="border:0;"allowfullscreen=""loading="lazy"referrerpolicy="no-referrer-when-downgrade"></iframe>
-</div>
+        <div class="iframe-map">
+          <iframe
+            id="mapasUnimed"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9919.826526887045!2d-48.99440511109954!3d-28.473875271597066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x952143d845e56991%3A0xbb67d24034904864!2sHospital%20Unimed%20Tubar%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1760470310544!5m2!1spt-BR!2sbr"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+
+          <iframe
+            id="mapasProvida"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3550.3647872670544!2d-49.00581492450586!3d-28.476566982481174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f17!3m3!1m2!1s0x952143032bec18c1%3A0xdae99ca96c2ed00d!2sComplexo%20M%C3%A9dico%20Provida!5e0!3m2!1spt-BR!2sbr!4v1760549999999!5m2!1spt-BR!2sbr"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            hidden
+          ></iframe>
+        </div>
       </div>
     </section>
-<footer class="footer">
-  <div class="footer-content">
-    <div class="footer-columns">
-      <img src="imgs/GBS_Logo-Portrait.svg" alt="Logo GBS">
-    
+    <footer>
+      <div class="footer-content">
+        <div class="footer-top">
+          <img src="imgs/GBS_Logo-Portrait.svg" alt="Logo GBS" />
+          <div class="devils-albatross"></div>
+          <div class="footer-columns">
+            <div class="footer-column">
+              <h3 class="heading">Contato</h3>
+              <ul class="body-small">
+                <li><a href="#">WhatsApp</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Email</a></li>
+              </ul>
+            </div>
 
-    
-    <div class="footer-columns">
-      <div class="footer-column">
-        <h3 class="heading">Contato</h3>
-        <ul class="body-small">
-          <li><a href="#">WhatsApp</a></li>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">Email</a></li>
-        </ul>
-      </div>
+            <div class="footer-column">
+              <h3 class="heading">Navegação</h3>
+              <ul class="body-small">
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
-      <div class="footer-column">
-        <h3 class="heading">Navegação</h3>
-        <ul class="body-small">
-          <li><a href="#">Serviços</a></li>
-          <li><a href="#">Sobre</a></li>
-          <li><a href="#">Contato</a></li>
-        </ul>
+        <hr />
+
+        <p class="body-small">
+          Dr. Gustavo Botega de Souza © 2025 — Todos os direitos reservados
+          <span>CRM/SC 16864 — RQE 13665</span>
+        </p>
       </div>
-    </div>
-    </div>
-    
-    <hr>
-    
-    <p class="footer-copy">
-      Dr. Gustavo Botega de Souza © 2025 — Todos os direitos reservados
-    </p>
-  </div>
-</footer>
+    </footer>
   </body>
 </html>
