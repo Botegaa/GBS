@@ -1,32 +1,41 @@
 function mudarTabClinica(idClinica) {
   const unimedBtn = document.getElementById("tab-a");
   const providaBtn = document.getElementById("tab-b");
+  const hnscBtn = document.getElementById("tab-c");
 
   const unimedPanel = document.getElementById("panel-a");
   const providaPanel = document.getElementById("panel-b");
+  const hnscPanel = document.getElementById("panel-c");
 
-  const unimedMap = document.getElementById("mapasUnimed")
-  const providaMap = document.getElementById("mapasProvida")
+  const unimedMap = document.getElementById("mapasUnimed");
+  const providaMap = document.getElementById("mapasProvida");
+  const hnscMap = document.getElementById("mapasHnsc");
 
+  unimedBtn.setAttribute("aria-selected", "false");
+  providaBtn.setAttribute("aria-selected", "false");
+  hnscBtn.setAttribute("aria-selected", "false");
+
+  unimedPanel.setAttribute("hidden", "true");
+  providaPanel.setAttribute("hidden", "true");
+  hnscPanel.setAttribute("hidden", "true");
+
+  unimedMap.setAttribute("hidden", "true");
+  providaMap.setAttribute("hidden", "true");
+  hnscMap.setAttribute("hidden", "true");
+
+ 
   if (idClinica === "unimed") {
     unimedBtn.setAttribute("aria-selected", "true");
-    providaBtn.setAttribute("aria-selected", "false");
-
     unimedPanel.removeAttribute("hidden");
-    providaPanel.setAttribute("hidden", "true");
-
     unimedMap.removeAttribute("hidden");
-    providaMap.setAttribute("hidden", "true");
   } else if (idClinica === "provida") {
     providaBtn.setAttribute("aria-selected", "true");
-    unimedBtn.setAttribute("aria-selected", "false");
-
     providaPanel.removeAttribute("hidden");
-    unimedPanel.setAttribute("hidden", "true");
-
     providaMap.removeAttribute("hidden");
-    unimedMap.setAttribute("hidden", "true");
-
+  } else if (idClinica === "hnsc") {
+    hnscBtn.setAttribute("aria-selected", "true");
+    hnscPanel.removeAttribute("hidden");
+    hnscMap.removeAttribute("hidden");
   }
 }
 

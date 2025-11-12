@@ -485,6 +485,16 @@
               >
                 Pró-Vida
               </button>
+              <button
+                id="tab-c"
+                role="tab"
+                aria-controls="panel-b"
+                aria-selected="false"
+                class="btn-option"
+                onClick="mudarTabClinica('hnsc')"
+              >
+                HNSC
+              </button>
             </div>
             <div id="panel-a" role="tabpanel" aria-labelledby="tab-a">
               <div class="loc">
@@ -554,6 +564,41 @@
                 <p class="body-large">(48) 3631-1500</p>
               </div>
             </div>
+            <div id="panel-c" role="tabpanel" aria-labelledby="tab-c" hidden>
+              <div class="loc">
+                <svg
+                  class="icon-s"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7m0 9.5a2.5 2.5 0 0 1 0-5a2.5 2.5 0 0 1 0 5"
+                  />
+                </svg>
+                <div class="endereco">
+                  <p class="body-large">
+                    R. Vidal Ramos, 215 
+                  </p>
+                  <p class="body-large">Centro, Tubarão - SC</p>
+                </div>
+              </div>
+              <div class="phone">
+                <svg
+                  class="icon-s"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24c1.12.37 2.33.57 3.57.57c.55 0 1 .45 1 1V20c0 .55-.45 1-1 1c-9.39 0-17-7.61-17-17c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02z"
+                  />
+                </svg>
+                <p class="body-large">(48) 3631-7000</p>
+              </div>
+            </div>
           </div>
         </div>
         <div class="iframe-map">
@@ -570,6 +615,15 @@
             id="mapasProvida"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3550.3647872670544!2d-49.00581492450586!3d-28.476566982481174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f17!3m3!1m2!1s0x952143032bec18c1%3A0xdae99ca96c2ed00d!2sComplexo%20M%C3%A9dico%20Provida!5e0!3m2!1spt-BR!2sbr!4v1760549999999!5m2!1spt-BR!2sbr"
             style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            hidden
+          ></iframe>
+
+          <iframe
+            id="mapasHnsc"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2085.25592775446!2d-49.00408351587681!3d-28.480496206908214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x952142e2dc8690b7%3A0x2fa7827145f3622f!2sHospital%20Nossa%20Senhora%20da%20Concei%C3%A7%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1762970630038!5m2!1spt-BR!2sbr" 
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
