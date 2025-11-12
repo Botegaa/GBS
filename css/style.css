@@ -205,11 +205,45 @@ header {
 }
 
 .area-card ul {
-  list-style-type: disc;
+  list-style-type: none;
   padding-left: 1.5rem;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
+
+
+details {
+  display: flex;
+  flex-direction: column;
+  
+  p {
+    font-size: 0.8rem;
+    color: #7E828F;
+    padding:  0.875rem;
+  }
+}
+details {
+  transition: all 0.25s ease;
+}
+
+details[open] {
+  transition: all 0.25s ease;
+}
+
+details > summary {
+  cursor: pointer;
+
+}
+
+details > *:not(summary) {
+  overflow: hidden;
+  animation: smoothOpen 0.25s ease;
+}
+
+@keyframes smoothOpen {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 /* == BOTÕES DO CARROSSEL == */

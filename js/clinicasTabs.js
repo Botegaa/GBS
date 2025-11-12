@@ -87,3 +87,18 @@ function updatePagination(current) {
     }
   });
 }
+
+  const allDetails = document.querySelectorAll("details");
+
+  allDetails.forEach((targetDetail) => {
+    targetDetail.addEventListener("toggle", () => {
+      if (targetDetail.open) {
+        allDetails.forEach((detail) => {
+          if (detail !== targetDetail) {
+            detail.removeAttribute("open");
+          }
+        });
+      }
+    });
+  });
+
